@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+<script>
+	const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // if you want the widget to be on the right then `right: '32px' and left to unset
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.5s' the time to fade in and out 
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: true, // set to true if you want to load the site in the mode the user left it in
+  label: '🌓', // the emoji you want for toggling light and dark mode
+  autoMatchOsTheme: true // if you have enabled dark mode it would open darkmode
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="propeller" content="da3fdafeb3a0f1ea42befd9f24edd1d3" />
+		<title>Xiao</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="description" content="Xiao — многоцелевой бот." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="Xiao" />
+		<meta property="og:url" content="https://discord.gg/n7p8r3vtKS" />
+		<meta property="og:description" content="Xiao — многоцелевой бот." />
+		<meta name="msapplication-TileColor" content="#2c75ff" />
+		<meta
+			name="keywords"
+			content="opbot, opbit, discord op bot, bot, network, cheesits, op, bit, best discord bot, 306018440639152128, 423637161632464906, global, chat"
+		/>
+		<meta property="og:type" content="object" />
+		<meta property="og:image" content="https://cdn.discordapp.com/avatars/848826210241740810/27b77b7810eca4d770e0a75cac7135a5.png" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<link rel="icon" sizes="192x192" href="images/opbot.webp" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-title" content="Xiao" /> 
+		<link rel="apple-touch-icon-precomposed" href="images/opbot.webp" />
+		<meta name="msapplication-TileImage" content="https://www.op.thedev.id/images/opbot.webp" />
+		<meta name="theme-color" content="#2c75ff" />
+		<link rel="shortcut icon" href="images/opbot.webp" />
+		<meta name="abuseipdb-verification" content="VtHtNeUc" />
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<link rel="stylesheet" href="css/pageclip.css" media="screen" />
+		<link rel="stylesheet" href="css/mobile.css">
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<!-- Loading animation -->
+		<div id="preloader">
+			<div id="status">
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header -->
+		<header id="topnav" class="defaultscroll sticky">
+			<div class="container">
+				<!-- Logo -->
+				<div>
+					<a class="logo" href="#"><span class="text-primary">Xiao</span></a>
+				</div>
+
+				<!-- Invite Buttons -->
+				<div class="buy-button hide-mobile">
+					<a href="https://discord.com/api/oauth2/authorize?client_id=977470324742443098&permissions=309356631&scope=bot" target="_blank" class="btn btn-primary">Add Bot</a>
+				</div>
+				<div class="buy-button hide-mobile" style="padding-right: 0.25em">
+					<a href="https://discord.gg/n7p8r3vtKS" target="_blank" class="btn btn-outline-primary">Join Server</a>
+				</div>
+
+				<!-- Mobile Tray Toggle -->
+				<div class="menu-extras">
+					<div class="menu-item">
+						<a class="navbar-toggle">
+							<div class="lines">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Navigation -->
+
+				<!--
+        "New" badge for nav items:
+        <span class="badge badge-success nav-menu-right nav-menu-badge">New</span>
+      -->
+
+				<div id="navigation">
+					<ul class="navigation-menu">
+						<!-- Mobile Invites -->
+						<li class="show-mobile buy-button">
+							<span><a href="https://discord.com/api/oauth2/authorize?client_id=977470324742443098&permissions=309356631&scope=bot" target="_blank" class="btn btn-block btn-primary">Add Bot</a></span>
+						</li>
+						<li class="show-mobile buy-button">
+							<span><a href="https://discord.gg/n7p8r3vtKS" target="_blank" class="btn btn-block btn-outline-primary">Join Server</a></span>
+							<hr style="opacity: 25%; margin-top: 10px; margin-bottom: 10px" />
+						</li>
+
+						<!-- Nav Row 1 -->
+						<li><a class="text-primary">Home</a></li>
+
+						<!-- Nav Row 2 -->
+						<li class="has-submenu">
+							<a>Bot</a><span class="menu-arrow"></span>
+							<ul class="submenu">
+								<li><a href="https://discord.gg/xtessK2DPA">Donate</a></li>
+							</ul>
+						</li>
+
+						<!-- Nav Row 4 -->
+						<li class="has-submenu">
+							<a>Vote</a><span class="menu-arrow"></span>
+							<ul class="submenu">
+								<li><a href="https://botlist.space/bot/848826210241740810/upvote" target="_blank">botlist.space</a></li>
+								<li><a href="https://bots.ondiscord.xyz/bots/848826210241740810?vote" target="_blank">bots.ondiscord.xyz</a></li>
+								<li><a href="https://botsfordiscord.com/bot/848826210241740810/vote" target="_blank">botsfordiscord.com</a></li>
+								<li><a href="https://top.gg/bot/848826210241740810/vote" target="_blank">top.gg</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- Jumbotron -->
+		<section class="bg-half-170" id="home">
+			<div class="home-center">
+				<div class="home-desc-center">
+					<div class="container">
+						<div class="row align-items-center">
+							<!-- Coloumn 1 -->
+							<div class="col-lg-6 col-md-7">
+								<div class="title-heading mt-4">
+									<h1 class="heading mb-3">Управляйте своим сервером с помощью <span class="text-primary">Xiao</span></h1>
+									<p class="para-desc text-muted">
+										Обладая практически всеми функциями, о которых только можно подумать, а также преданным персоналом и активной командой поддержки, Xiao является
+идеальное дополнение к любому серверу Discord. <span class="text-primary">Прокрутите вниз, чтобы узнать больше . . .</span>
+									</p>
+								</div>
+							</div>
+
+							<!-- Column 2 -->
+							<div class="col-lg-6 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0 hide-mobile">
+								<video autoplay loop muted playsinline width="85%" class="img-fluid mx-auto d-block">
+									<source src="images/Xiao.mp4" type="video/mp4" />
+									<source src="images/Xiao.mp4" type="video/mp4" />
+								</video>
+							</div>
+						</div>
+					</div>
+
+					<!-- Background Design Image -->
+					<div class="container-fluid">
+						<div class="row">
+							<div class="home-shape-bottom">
+								<img src="images/shapes/round-light.webp" alt="" loading="lazy" class="img-fluid mx-auto d-block" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Statistics -->
+		<section class="section bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<!-- Title and Description -->
+						<div class="section-title mb-60">
+							<h4 class="main-title mb-4">Cтатистика</h4>
+							<p class="text-muted para-desc mb-0 mx-auto">
+								Приведенная ниже статистика получена из пользовательского API в режиме реального времени и предназначена для демонстрации масштаба этого проекта..
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Set up 2 columns -->
+				<div class="row justify-content-center align-items-center">
+					<div class="col-lg-8 col-md-8">
+						<div class="row">
+							<!-- Stat Column 1 -->
+							<div class="col-md-6 col-12">
+								<div class="features p-1 pt-4 pb-4">
+									<i class="mdi mdi-account icon text-center rounded-pill text-primary mr-3 mt-2 float-left"></i>
+									<div class="content d-block overflow-hidden">
+										<h4 class="title">30000+<span id="stats-members"></span> Участников</h4>
+										<p class="text-muted para mb-0">общая сумма каждого пользователя, который делит сервер с Xiao</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Stat Column 2 -->
+							<div class="col-md-6 col-12">
+								<div class="features p-1 pt-4 pb-4">
+									<i class="mdi mdi-server icon text-center rounded-pill text-primary mr-3 mt-2 float-left"></i>
+									<div class="content d-block overflow-hidden">
+										<h4 class="title"><span id="stats-servers">60+</span> Серверов</h4>
+										<p class="text-muted para mb-0">общее количество серверов, на которых находится Xiao</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Stat Column 3 -->
+							<div class="col-md-6 col-12">
+								<div class="features p-1 pt-4 pb-4">
+									<i class="mdi mdi-code-greater-than icon text-center rounded-pill text-primary mr-3 mt-2 float-left"></i>
+									<div class="content d-block overflow-hidden">
+										<h4 class="title"><span id="stats-commands">343</span> Команд</h4>
+										<p class="text-muted para mb-0">общее количество команд у Xiao</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Stat Column 4 -->
+							<div class="col-md-6 col-12">
+								<div class="features p-1 pt-4 pb-4">
+									<i class="mdi mdi-chart-line icon text-center rounded-pill text-primary mr-3 mt-2 float-left"></i>
+									<div class="content d-block overflow-hidden">
+										<h4 class="title"><span id="stats-ads">50%</span> Скорость роста</h4>
+										<p class="text-muted para mb-0">Процент роста Xiao</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Stat Column 5 -->
+							<div class="col-md-6 col-12">
+								<div class="features p-1 pt-4 pb-4">
+									<i class="mdi mdi-message icon text-center rounded-pill text-primary mr-3 mt-2 float-left"></i>
+									<div class="content d-block overflow-hidden">
+										<h4 class="title"><span id="stats-global-channels">5000+</span> Всего каналов</h4>
+										<p class="text-muted para mb-0">общее количество каналов, подключенных к Xiao</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features -->
+		<section class="section pt-0 bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<!-- Title and Description -->
+						<div class="section-title mb-60">
+							<h4 class="main-title mb-4">Факторы</h4>
+							<p class="text-muted para-desc mb-0 mx-auto">
+								Добавь <span class="text-primary font-weight-bold">Xiao</span> на свой сервер, чтобы получить все следующие функции и многое другое!
+							</p>
+
+							<!-- Pill Selectors -->
+							<div class="row mt-4 justify-content-center">
+								<div class="col-lg-8 col-md-12 text-center">
+									<ul class="nav nav-pills nav-justified flex-column flex-sm-row" id="pills-tab" role="tablist">
+										<!-- Pill 1 Button -->
+										<li class="nav-item mt-4 pt-2">
+											<a
+												class="nav-link rounded active"
+												id="pills-giveaways-tab"
+												data-toggle="pill"
+												href="#pills-giveaways"
+												role="tab"
+												aria-controls="pills-giveaways"
+												aria-selected="false"
+											>
+												<div class="text-center pt-1 pb-1">
+													<h4 class="title font-weight-normal mb-0">Giveaways</h4>
+												</div>
+											</a>
+										</li>
+
+										<!-- Pill 2 Button -->
+										<li class="nav-item mt-4 pt-2">
+											<a
+												class="nav-link rounded"
+												id="pills-games-tab"
+												data-toggle="pill"
+												href="#pills-games"
+												role="tab"
+												aria-controls="pills-games"
+												aria-selected="false"
+											>
+												<div class="text-center pt-1 pb-1">
+													<h4 class="title font-weight-normal mb-0">Mini-game & Fun</h4>
+												</div>
+											</a>
+										</li>
+
+										<!-- Pill 3 Button -->
+										<li class="nav-item mt-4 pt-2">
+											<a
+												class="nav-link rounded"
+												id="pills-mod-tab"
+												data-toggle="pill"
+												href="#pills-mod"
+												role="tab"
+												aria-controls="pills-mod"
+												aria-selected="false"
+											>
+												<div class="text-center pt-1 pb-1">
+													<h4 class="title font-weight-normal mb-0">Moderation</h4>
+												</div>
+											</a>
+										</li>
+
+										<!-- Pill 4 Button -->
+										<li class="nav-item mt-4 pt-2">
+											<a
+												class="nav-link rounded"
+												id="pills-more-tab"
+												data-toggle="pill"
+												href="#pills-more"
+												role="tab"
+												aria-controls="pills-more"
+												aria-selected="false"
+											>
+												<div class="text-center pt-1 pb-1">
+													<h4 class="title font-weight-normal mb-0">Much more!</h4>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="tab-content" id="pills-tabContent">
+							<!-- Pill 1 -->
+							<div class="tab-pane fade show active" id="pills-giveaways" role="tabpanel" aria-labelledby="pills-ads-tab">
+								<div class="row align-items-center">
+									<div class="col-md-6 hide-mobile">
+										<img src="images/pattern.webp" loading="lazy" class="img-fluid mx-auto d-block" alt="" />
+									</div>
+
+									<!-- Pill 1 Content -->
+									<div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+										<div class="section-title">
+											<h4 class="title mb-4"><i class="mdi mdi-chevron-double-right text-primary"></i> Прославите свой ник</h4>
+											<p class="text-muted">
+												Розыгрыши позволяют вам выбрать бонусную запись (дополнительные шансы на победу) при розыгрыше подарков.
+											
+											</p>
+											<ul class="list-unstyled feature-list text-muted">
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Он имеет встроенное напоминание о выигрыше
+												</li>
+												<li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Прост в управлений</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Легко настраиваемый
+													
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Pill 2 -->
+							<div class="tab-pane fade" id="pills-games" role="tabpanel" aria-labelledby="pills-games-tab">
+								<div class="row align-items-center">
+									<div class="col-md-6 hide-mobile">
+										<img src="images/pattern.webp" loading="lazy" class="img-fluid mx-auto d-block" alt="" />
+									</div>
+
+									<!-- Pill 2 Content -->
+									<div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+										<div class="section-title">
+											<h4 class="title mb-4"><i class="mdi mdi-chevron-double-right text-primary"></i> Общайтесь с новыми людьми, играя в веселые игры.</h4>
+											<p class="text-muted">
+												У нас есть слова хаоса, мини-игры, музыка, кастом команды и т.д.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Pill 3 -->
+							<div class="tab-pane fade" id="pills-mod" role="tabpanel" aria-labelledby="pills-mod-tab">
+								<div class="row align-items-center">
+									<div class="col-md-6 hide-mobile">
+										<img src="images/pattern.webp" loading="lazy" class="img-fluid mx-auto d-block" alt="" />
+									</div>
+
+									<!-- Pill 3 Content -->
+									<div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+										<div class="section-title">
+											<h4 class="title mb-4"><i class="mdi mdi-chevron-double-right text-primary"></i> Сохраняй в чистоте</h4>
+											<p class="text-muted">
+												У Xiao есть обширный список команд и функций модерации, которые помогут вам поддерживать ваш сервер в рабочем состоянии.
+												ты хочешь, чтобы это было.
+											</p>
+											<ul class="list-unstyled feature-list text-muted">
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Автоматически предоставлять новым пользователям назначенная роль
+												</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Kick, ban, или warn участников с помощью команд
+												</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Автоматически удалять сообщения, содержащие заданные вами слова/фразы
+												</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Настройте приветственные сообщения, когда участники присоединяются 
+												</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Настройте тикеты чтобы решить проблему участников
+												</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Зашита от рейдов с помощью капчи
+												</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Массовое удаление большого количества сообщений
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Pill 4 -->
+							<div class="tab-pane fade" id="pills-more" role="tabpanel" aria-labelledby="pills-more-tab">
+								<div class="row align-items-center">
+									<div class="col-md-6 hide-mobile">
+										<img src="images/pattern.webp" loading="lazy" class="img-fluid mx-auto d-block" alt="" />
+									</div>
+
+									<!-- Pill 4 -->
+									<div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+										<div class="section-title">
+											<h4 class="title mb-4"><i class="mdi mdi-chevron-double-right text-primary"></i> Веселиться</h4>
+											<p class="text-muted">У Xiao есть много полезных команд, которые могут значительно улучшить взаимодействие с пользователем.</p>
+											<ul class="list-unstyled feature-list text-muted">
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Калькулятор
+												</li>
+												<li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Создайте очень продвинутый опрос, чтобы пользователи могли проголосовать за него</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Посмотреть подробную информацию о указанном пользователе, сервере 
+												</li>
+												<li>
+													<i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>И многое другое!
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Background Image -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="home-shape-bottom">
+						<img src="images/shapes/round-white.webp" alt="" loading="lazy" class="img-fluid mx-auto d-block" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<br /><br /><br />
+
+		<!-- Reviews -->
+		<section class="section pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div id="customer-testi" class="owl-carousel owl-theme">
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">"Самый универсальный бот, который я когда-либо видел, с множеством функций"</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Я использовал Xiao, чтобы заменить 4 других бота, которые работали не так хорошо, как Xiao! Я искал бота для тикетов в частном порядке более 1 месяца, Xiao делает это с легкостью! Создатель активен и очень полезен!
+Спасибо Xiao! Я с нетерпением жду возможности удалить будущих ботов с моих серверов благодаря вашим будущим обновлениям. Любимый дискорд
+бот на сегодняшний день!"
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Xiao — один из моих любимых ботов! Он поставляется со всеми функциями и разнообразиями от натыкания до модерации. Я изо всех сил старался добавить Xiao на свой сервер и наблюдал, как он рос и выглядел более профессионально. Настоятельно рекомендую этого бота. Удалил много ботов с моего сервера, потому что Xiao предлагает функции этих ботов. Качество превыше количества, Всегда."
+								</p>
+							</div>
+
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"У бота много положительных функций, больше всего мне нравится в этом боте кастомные команды."
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">Черт возьми, этот бот уникален, и его создатель тоже заслуживает внимания.."</p>
+							</div>
+
+							
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Xiao оказался довольно эффективным. Функция чат бот — одна из многих вещей, которые мне лично нравятся больше всего, потому что вы можете настроеть чат для бота. Создатель постоянно взаимодействует и принимает предложения о функциях, которые нужно добавить, и о том, что необходимо исправить, то есть, если возникла проблема с ботом, вы можете отправить сообщение создателю и она будет исправлена как можно быстрее. В настоящее время работаю над распространением этого удивительного бота, потому что он заслуживает того, чтобы им поделились! :D"
+								</p>
+							</div>
+
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Отличный бот! Замечательный разработчик, функции и все остальное в нем просто потрясающе. Всегда работает, что является улучшением по сравнению с некоторыми ботами (динамический кашель)"
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Самый крутой, самый универсальный бот. Можно буквально сказать, что этот бот единственный в своем роде. Удивительная поддержка и разработчик!"
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"плохо быть сторонником<br />
+									плавный и удивительный бот.<br />
+									уже выкинул половину моих других ботов"
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Хороший бот и потрясающая помощь от создателя! Помог мне настроить, когда я не знал, как это сделать, и теперь работает отлично."
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Хорошо, так что я думаю, что когда-либо делал один или два из них, и я не просто так разбрасываюсь рекомендациями. ЭТОТ БОТ ВЕЛИКОЛЕПЕН, МОЖЕТ СДЕЛАТЬ ТО, ЧЕГО НЕ ДЕЛАЕТ ДРУГОЙ БОТ, И Я НАСТОЯТЕЛЬНО РЕКОМЕНДУЮ ЕГО. Некоторые разработчики будут буквально смеяться над вами, и все они заявляют, что то, что делает этот бот, невозможно настроить. Но что делает этот разработчик? Создает и/или устанавливает его. Не всем нужен такой бот, но всем, кто НУЖЕН ЭТОТ БОТ. ПРОСТО ПОЛУЧИТЕ ЭТО УЖЕ ПОЧЕМУ ВЫ ЧИТАЕТЕ ЭТО ДОЛГО В ОБЗОРЕ?"
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">"просто работает"</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">"Бот довольно эпичный, чат бот был отличной идеей"</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">"Эпический бот. 10/10, воспользуюсь снова. Множество функций и т.д."</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">
+									"Я долго искал функцию кастомные команды. Поиск привел меня только к старым сообщениям Reddit, где люди просили то же самое, но не могли найти. Я знаю, что многие люди ищут такого бота, но не могут его найти. Им людям я говорю, что это, вероятно, пойдет к вашему любимому боту, как я.."
+								</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">"Более стабильный, чем почти каждый бот, которого я видел"</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">"У него так много функций, это действительно единственный бот, который вам нужен."</p>
+							</div>
+
+							<div class="customer-testi p-3 text-center">
+								<p class="text-muted mt-4">"Бот просто потрясающий и стабильный"</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Background Image -->
+			<div class="container-fluid">
+				<div class="row">
+					<div class="home-shape-bottom">
+						<img src="images/shapes/round-dark.webp" alt="" loading="lazy" class="img-fluid mx-auto d-block" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer footer-bar">
+			<div class="container text-center">
+				<div class="row align-items-end">
+					<!-- Column 1 -->
+					<div class="col-sm-3 text-sm-left">
+						<h1 class="text-light mb-0"><span class="text-primary">Xiao</span></h1>
+						<div class="small">© <span id="copyright-year"></span>Discord: inferno#7797</div>
+            
+						<div class="pt-4 pb-4 text-light">
+							<div><i class="mdi mdi-email"></i> <a href="https://FRUNGLNM@gmail.com" target="_blank" class="text-foot">Gmail</a></div>
+						</div>
+						<a href="https://discord.gg/xEA4Jzkz4u" target="_blank" class="btn btn-block btn-primary">Donate</a>
+					</div>
+
+					<!-- Column 2 -->
+					<div class="col-sm-5"></div>
+
+					<!-- Column 3 -->
+					<div class="col-sm-4 pt-2">
+						<a href="https://discord.gg/Y5PzYAZrmf" target="_blank" class="btn btn-block btn-primary">Leave a Review</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/mobileCheck.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/owl.carousel.min.js "></script>
+		<script src="js/owl.init.js "></script>
+		<script src="js/app.js"></script>
+		<script src="js/script.js"></script>
+		<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+	</body>
+
+	<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+<script>
+	const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // if you want the widget to be on the right then `right: '32px' and left to unset
+  left: '32px', // default: 'unset'
+  time: '0.5s', // default: '0.5s' the time to fade in and out 
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: true, // set to true if you want to load the site in the mode the user left it in
+  label: '🌓', // the emoji you want for toggling light and dark mode
+  autoMatchOsTheme: true // if you have enabled dark mode it would open darkmode
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
+	
+</html>
